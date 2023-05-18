@@ -1,36 +1,33 @@
-import React, { useState, useEffect } from 'react'
-//import { Link } from 'react-router-dom'
+import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 import './Navbar.css'
 import instagram from '../../static/assets/icons/instagram.png'
 import logoCruskella from '../../static/assets/icons/logo-cruskella.png'
 import BurguerBottom from '../BurguerBottom'
 
 export default function Navbar() {
-      const [ clicked, setClicked ] = useState(false);
-    
-     
-      const handleClick = () => {
-            setClicked(!clicked)
-      }
-      /* <Link to="/"><img  src={logoCruskella}  alt="logo cruskella" /></Link>
+      const [clicked, setClicked] = useState(false);
 
-            <div >
-                <Link to='/Menu' >Menu</Link>
-                <Link to="/EntregaAdomicilio" >Entrega a Domicilio</Link>
-                <Link to='/Contacto' >Contacto</Link>
-                <Link to='https://instagram.com/lacruskella?igshid=NTc4MTIwNjQ2YQ=='> <img src={instagram}  alt="logo instagram" /></Link>
-            </div>*/
+      const handleClick = (e) => {
+            let anchoVentanaPx = e.view.innerWidth;
+            if (anchoVentanaPx >= 768) {
+                  setClicked(false)
+            } else if (anchoVentanaPx < 768) {
+                  setClicked(!clicked)
+            }
+      }
+
       return (
             <header >
-                  <img className='logo-cruskella' src={logoCruskella} alt="logo cruskella" />
+                  <Link to='/'><img className='logo-cruskella' src={logoCruskella} alt="logo cruskella" /></Link>
                   <div className={`links ${clicked ? 'active' : ''}`}>
-                        <a href=''>Menu</a>
-                        <a href=''>Entrega a Domicilio</a>
-                        <a href=''>Contacto</a>
-                        <a href=''><img src={instagram} className='instagram' alt="logo instagram" /></a> 
+                        <Link to='/Menu'> <a onClick={handleClick}>Menu</a></Link>
+                        <Link to='/EntregaDomicilio'><a onClick={handleClick}>Entrega a Domicilio</a></Link>
+                        <Link to='/Contacto'><a onClick={handleClick}>Contacto</a></Link>
+                        <Link to='https://instagram.com/lacruskella?igshid=NTc4MTIwNjQ2YQ=='><a onClick={handleClick}><img src={instagram} className='instagram' alt="logo instagram" /></a> </Link>
                   </div>
                   <div className='burguer'>
-                  <BurguerBottom clicked={clicked} handleClick={handleClick}/>
+                        <BurguerBottom clicked={clicked} handleClick={handleClick} />
                   </div>
             </header>
 

@@ -8,7 +8,7 @@ header {
 
 .logo-cruskella {
    width: 114px;
-   margin: 4px 26px;
+   margin: 0 26px;
 
 }
 
@@ -31,7 +31,7 @@ a {
    margin-right: auto;
    padding-top: 10px;
    padding-bottom: 10px;
-   top: -60%;
+   top: -90%;
    left: 0;
    right: 0;
    text-align: center;
@@ -47,7 +47,8 @@ a {
    margin-left: auto;
    margin-right: auto;
    padding-top: 10px;
-   padding-bottom: 0;   top: 24.6%;
+   padding-bottom: 0;
+   top: 34.3%;
    left: 0;
    right: 0;
    text-align: center;
@@ -62,7 +63,7 @@ a {
 @media(min-width: 768px) {
    .logo-cruskella {
       width: 175px;
-      margin: 6px 0 6px 55px;
+      margin: 6px 0 2px 55px;
   }
    .burguer {
       display: none;
@@ -89,55 +90,3 @@ a {
       display: inline;
    }
 }
-
-/*
-@media  (min-width: 320px) and (max-width: 480px) {
-   
-    header{
-    background-color: #8b0000d1;
-    padding: .5rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: relative;
- }
- .logo-cruskella {
-    width: 90px;
-    margin: 5px 15px;
-
- }
- a {
-    text-decoration: none;
-    color: #e1d348;
-    margin-right: .4rem;
-    font-size: 10px;
-    
- }
- .links {
-    position: absolute;
-   top: 70px;
-   right: -225px ;
-   text-align: center;
-   margin-left: auto;
-   margin-right: auto;
- }
-
- .links.active {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    position: absolute;
-    top: 99.3%;
-    right: 0;
-    background-color: #8b0000d1;
-    
- }
- .links.active > a {
-    display: block;
-    font-size: 1.1rem;
-    font-weight: lighter;
-    margin: 8px 6px;
- }
-}
- 
- */
