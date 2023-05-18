@@ -1,0 +1,55 @@
+.footer-background {
+    background-color: rgba(139, 0, 0, 0.82);
+    display: flex;
+    align-items: center;
+    padding: 0.4rem;
+}
+.instagram-footer {
+    margin-left: 2rem;
+    margin-right: auto;
+    margin-bottom: 0.25rem;
+    margin-top: 1.25rem;
+    width: 40px;
+}
+
+h4 {
+    font-size: 10px;
+    padding-bottom: 6px;
+    color: rgb(225, 211, 72);
+}
+
+.img-ajuntament {
+    width: 147px;
+   
+}
+.ajuntament-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-right: 1rem;
+}
+
+@media(min-width: 768px) { 
+    .ajuntament-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        margin-right: 5rem;
+    }
+    
+    .instagram-footer {
+        margin-left: 5rem;
+        margin-right: auto;
+        margin-bottom: 0.25rem;
+        width: 60px;
+    }
+    h4 {
+        font-size: 14px;
+        padding-bottom: 6px;
+        color: rgb(225, 211, 72);
+    }
+    .img-ajuntament {
+        width: 213px;
+       
+    }
+}
