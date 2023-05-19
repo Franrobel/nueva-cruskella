@@ -5,16 +5,18 @@ header {
    align-items: center;
    justify-content: space-between;
 }
-
+.logo-cruske-container{
+   margin: 0;
+}
 .logo-cruskella {
    width: 114px;
-   margin: 0 26px;
+   margin: 0 23px;
 
 }
 
-a {
+a:not(#mailto) {
    text-decoration: none;
-   color: #e1d348;
+   color: rgb(248 238 152);
    margin-right: 1.5rem;
 
    display: block;
@@ -69,8 +71,10 @@ a {
       display: none;
    }
 
-   a {
+   a:not(#mailto) {
       font-size: large;
+      font-size: 1.2rem;
+      display: inline;
    }
    .instagram {
       position: relative;
@@ -83,10 +87,5 @@ a {
       top: 70px;
       background-color: transparent;
 
-   }
-
-   a {
-      font-size: 1.2rem;
-      display: inline;
    }
 }

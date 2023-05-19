@@ -19,7 +19,7 @@ export default function Navbar() {
 
       return (
             <header >
-                  <Link to='/'><img className='logo-cruskella' src={logoCruskella} alt="logo cruskella" /></Link>
+                  <Link to='/' className='logo-cruske-container'><img className='logo-cruskella' src={logoCruskella} alt="logo cruskella" /></Link>
                   <div className={`links ${clicked ? 'active' : ''}`}>
                         <Link to='/Menu'> <a onClick={handleClick}>Menu</a></Link>
                         <Link to='/EntregaDomicilio'><a onClick={handleClick}>Entrega a Domicilio</a></Link>
