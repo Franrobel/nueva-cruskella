@@ -7,13 +7,13 @@ import location from '../../static/assets/icons/pinMarker-icon.png'
 export default function Contacto() {
   return (
 
-    <main className='bg-redbg'>
+    <main>
 
       <div className='main-container'>
         <div className='mail-container'>
           <a id='mailto' href="mailto:lacruskella@gmail.com">
           <img className='img-mail' src={mail} alt='mail' />
-          <h5 className='text-yellowish'>lacruskella@gmail.com</h5>
+          <h5 >lacruskella@gmail.com</h5>
           </a>
         </div>
         <div className='location-container'>
