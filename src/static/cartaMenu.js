@@ -2,38 +2,42 @@ const carta = [{
     entrantes: [{
         nombre: "Suppli de Mozzarella",
         ingredientes: "bolita rebozada de arroz con salsa de tomate y un corazón de mozzarela",
-        precio: "€ 1,50"
-        },
-       { 
-        nombre: "Suppli de Carne",
-        precio: "€ 2,00"
+        precio: "€ 1,50",
+        gluttenFree: false
     },
-        {
-            nombre: "Lasagna de Verduras ó Carne",
-            precio: "€ 6,00"
-        },
-        {
-            nombre: "Ensaladas",
-            precio: "€ 8,00 a € 9,00"
-        }
+    {
+        nombre: "Suppli de Carne",
+        precio: "€ 2,00",
+        gluttenFree: false
+    },
+    {
+        nombre: "Lasagna de Verduras ó Carne",
+        precio: "€ 6,00", 
+        gluttenFree: false
+    },
+    {
+        nombre: "Ensaladas",
+        precio: "€ 8,00 a € 9,00", 
+        gluttenFree: false
+    }
     ],
     pizzas: [{
         nombre: "Marinara *",
         ingredientes: "salsa de tomate, ajo y orégano",
-        precio: "€ 6,00", 
-        gluttenFree: true
+        precio: "€ 6,00",
+        gluttenFree: false
     },
     {
         nombre: "Margherita",
         ingredientes: "salsa de tomate, mozzarella, albahaca",
-        precio: "€ 7,00", 
+        precio: "€ 7,00",
         gluttenFree: true
 
     },
     {
         nombre: "campeona",
         ingredientes: "salsa de tomate, mozzarella y champiñón",
-        precio: "€ 8,00", 
+        precio: "€ 8,00",
         gluttenFree: true
     },
     {
@@ -41,7 +45,7 @@ const carta = [{
         ingredientes: "salsa de tomate, champiñón, cebolla roja, aceituna y orégano",
         precio: "€ 8,00",
         extra: "€ 9,00",
-        gluttenFree: true
+        gluttenFree: false
     },
     {
         nombre: "Jamón y Queso",
@@ -54,7 +58,7 @@ const carta = [{
         nombre: "Jamón Serrano y Queso",
         ingredientes: "salsa de tomate, mozzarella y jamón serrano",
         precio: "€ 9,50",
-        gluttenFree: true
+        gluttenFree: false
     },
     {
         nombre: "La Grana",
@@ -187,22 +191,22 @@ const carta = [{
         nombre: "Artemisia",
         ingredientes: "mozzarella, queso scamorza ahumado, ricotta, rúcula, tomate seco y panceta",
         precio: "€ 15,00",
-        
+
         gluttenFree: false
     },
     ],
     pizzasEstacion: {},
     postres: [{
-        nombre: "Tiramisu", 
+        nombre: "Tiramisu",
         precio: "€ 4,00"
-    }, 
+    },
     {
-        nombre: "Tarta de queso con fresa", 
+        nombre: "Tarta de queso con fresa",
         precio: "€ 4,00"
-    }, 
+    },
     {
-        nombre: "La Dolce Vita *", 
-        ingredientes: "pizza con crema de cacao, avellanas y nueces", 
+        nombre: "La Dolce Vita *",
+        ingredientes: "pizza con crema de cacao, avellanas y nueces",
         precio: "€ 7,00",
         extra: "€ 7,00"
     }]
